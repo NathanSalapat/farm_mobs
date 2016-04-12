@@ -4,6 +4,7 @@ mobs:register_mob("farm_mobs:dog", {
 	type = "animal",
 	passive = false,
 	attack_type = "dogfight",
+	group_attack = true,
 	reach = 2,
 	damage = 4,
 	hp_min = 5,
@@ -18,9 +19,10 @@ mobs:register_mob("farm_mobs:dog", {
     {"farm_mobs_dog1.png"},
 	},
 	makes_footstep_sound = true,
---	sounds = {
---		random = "mobs_cow",
---	},
+	sounds = {
+		random = "farm_mobs_dog",
+		attack = 'farm_mobs_dog',
+	},
 	walk_velocity = 1,
 	run_velocity = 2,
 	jump = true,
